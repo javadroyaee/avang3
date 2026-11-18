@@ -21,6 +21,13 @@ jobs:
         with:
           gradle-version: '8.7'
 
+      - name: Download AndroidLibXrayLite AAR
+        run: |
+          set -e
+          mkdir -p app/libs
+          curl -fL "https://github.com/2dust/AndroidLibXrayLite/releases/download/v26.9.30/libv2ray.aar" -o app/libs/libv2ray.aar
+          ls -lh app/libs/libv2ray.aar
+
       - name: Compile hev-socks5-tunnel Native Libraries via NDK
         run: |
           set -e
