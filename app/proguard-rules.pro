@@ -1,0 +1,6 @@
+-keep class libv2ray.** { *; }
+-keep class go.** { *; }
+-keep class hev.htproxy.** { *; }
+-dontwarn libv2ray.**
+-dontwarn go.**
+-dontwarn hev.htproxy.**
