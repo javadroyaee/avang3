@@ -50,6 +50,9 @@ android {
 }
 
 dependencies {
+    // AAR محلی Xray (که توسط workflow از GitHub Releases دانلود می‌شود)
+    implementation(files("libs/libv2ray.aar"))
+
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
     implementation("androidx.activity:activity-compose:1.9.1")
@@ -61,5 +64,4 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.google.code.gson:gson:2.11.0")
     implementation("com.google.android.gms:play-services-code-scanner:16.1.0")
-    implementation("io.github.2dust:AndroidLibXrayLite:1.8.23")
 }
